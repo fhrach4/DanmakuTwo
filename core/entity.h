@@ -11,14 +11,14 @@ namespace Entities
 	{
 		private:
 			// every entity will have an x and y position
-			int xpos, ypos
+			int xpos, ypos;
 
 			// every entity will have a sprite
-			ALLEGRO_BITMAP *sprite
+			ALLEGRO_BITMAP *sprite;
 
 		public:
 			// Default constructor
-			Entity( *sprite);
+			Entity();
 
 			Entity( int xpos, int ypos, ALLEGRO_BITMAP *sprite );
 			/**
@@ -53,7 +53,9 @@ namespace Entities
 			 * Removes this entity from the field of play and cleans up any
 			 * used resources
 			 **/
-			void destroy()
+			void destroy();
 
-	}
+	};
 }
+
+#endif

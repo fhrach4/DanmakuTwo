@@ -29,13 +29,15 @@
 # The various source files for our program(s)
 MAIN_CPP_FILES  = danmakutwo.cpp 
 OTHER_CPP_FILES =
-CORE_CPP_FILES= entity.cpp
+CORE_CPP_FILES= entity.cpp bulletmanager.cpp
+ENTITY_CPP_FILES = bullet.cpp
 
 MAIN_C_FILES  = 
 OTHER_C_FILES = 
 
 HFILES =
-CORE_HFILES = entity.h
+CORE_HFILES = entity.h bulletmanager.h
+ENTITY_HFILES = bullet.h
 
 # Other files for your project, such as a 'ReadMe', etc.
 OTHER_FILES =
@@ -113,11 +115,12 @@ CFLAGS += $(COMMONFLAGS)
 CXXFLAGS += $(COMMONFLAGS)
 
 # Generate the full list(s) of typed source files under our concern
-CPP_FILES += $(MAIN_CPP_FILES) $(OTHER_CPP_FILES) core/$(CORE_CPP_FILES)
+CPP_FILES += $(MAIN_CPP_FILES) $(OTHER_CPP_FILES) core/$(CORE_CPP_FILES) \
+				entities/$(ENTITY_CPP_FILES)
 C_FILES   += $(MAIN_C_FILES) $(OTHER_C_FILES)
 
 # Generate the master list of *all* source files under our concern
-SOURCEFILES  += $(HFILES) core/$(CORE_HFILES)
+SOURCEFILES  += $(HFILES) core/$(CORE_HFILES) entities/$(ENTITY_HFILES)
 SOURCEFILES  += $(CPP_FILES) 
 SOURCEFILES += $(C_FILES) 
 

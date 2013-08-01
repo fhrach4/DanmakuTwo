@@ -15,8 +15,8 @@ namespace Entities
 			int xpos, ypos;
 
 			ALLEGRO_BITMAP *sprite;
-
-			//TODO check Allegro5 Docs for how to hitbox
+			int spriteWidth;
+			int spriteHight;
 
 		public:
 			Bullet();

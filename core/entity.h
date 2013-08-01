@@ -26,34 +26,36 @@ namespace Entities
 			 *
 			 * @return int containing the current value
 			 **/
-			int getxpos() const;
+			virtual int getxpos() const;
 
 			/**
 			 * Returs the y position of the entity
 			 *
 			 * @return int containing the current value
 			 **/
-			int getypos() const;
+			virtual int getypos() const;
 
 			/**
 			 * Changes the entity's x position to the supplied int
 			 *
 			 * @param int the new x position for the entity
 			 **/
-			int setxpos( int xpos);
+			virtual int setxpos( int xpos);
 
 			/**
 			 * Changes the entity's y position to the supplied int
 			 *
 			 * @param int the new y position for the entity
 			 **/
-			int setypos( int ypos);
+			virtual int setypos( int ypos);
 
 			/**
 			 * Removes this entity from the field of play and cleans up any
 			 * used resources
 			 **/
-			void destroy();
+			virtual void destroy();
+
+			virtual ~Entity();
 
 	};
 }

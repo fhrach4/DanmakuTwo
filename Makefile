@@ -29,14 +29,14 @@
 # The various source files for our program(s)
 MAIN_CPP_FILES  = danmakutwo.cpp 
 OTHER_CPP_FILES =
-CORE_CPP_FILES= entity.cpp bulletmanager.cpp
+CORE_CPP_FILES= entity.cpp bulletmanager.cpp collidable_entity.cpp
 ENTITY_CPP_FILES = bullet.cpp
 
 MAIN_C_FILES  = 
 OTHER_C_FILES = 
 
 HFILES =
-CORE_HFILES = entity.h bulletmanager.h
+CORE_HFILES = entity.h bulletmanager.h collidable_entity.h
 ENTITY_HFILES = bullet.h
 
 # Other files for your project, such as a 'ReadMe', etc.

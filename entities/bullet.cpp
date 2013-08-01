@@ -15,10 +15,10 @@ namespace Entities
 		collisionRadius = spriteWidth / 2;
 
 		//Used for more precise collision detetion tests
-		hitBox_x1 = xpos - spriteWidth / 2
-		hitBox_x2 = xpos + spriteWidth / 2
-		hitBox_y1 = ypos - spriteHeight / 2
-		hitBox_y2 = ypos + spriteHeight / 2
+		hitBox_x1 = xpos - spriteWidth / 2;
+		hitBox_x2 = xpos + spriteWidth / 2;
+		hitBox_y1 = ypos - spriteHeight / 2;
+		hitBox_y2 = ypos + spriteHeight / 2;
 	}
 	Bullet( int xpos, int ypos, ALLEGRO_BITMAP *sprite )
 	{

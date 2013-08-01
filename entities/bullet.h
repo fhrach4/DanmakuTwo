@@ -3,13 +3,13 @@
 
 #include <allegro5/allegro_image.h>
 
-#include "../core/entity.h"
+#include "../core/collidable_entity.h"
 
 
 namespace Entities
 {
 
-	class Bullet : public Entity
+	class Bullet : CollidableEntity
 	{
 		private:
 			int xpos, ypos;
@@ -22,10 +22,6 @@ namespace Entities
 			Bullet();
 
 			Bullet( int xpos, int ypos, ALLEGRO_BITMAP *sprite );
-
-			void update();
-
-			bool hasHit( Entity e );
 	};
 
 }
